@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">高密华荣</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="unknow_error">未知错误</string>
+
+    <string name="conn_error">连接失败</string>
+
+    <string name="conn_timeout">连接超时</string>
+
+    <string name="net_error">网络错误</string>
+
+    <string name="parse_error">解析异常</string>
+
+    <string name="net_unused">当前网络不可用</string>
+
+    <string name="yigou">定时提醒</string>
+    <string name="shoucang">版本检测</string>
+
+    <string name="text_cancel">取消</string>
+    <string name="text_exit">确定开启</string>
+    <string name="text_title">再连续登陆4天</string>
+
+    <string name="note">备&#12288;&#12288;注：</string>
+    <string name="name">姓&#12288;&#12288;名：</string>
+    <string name="pers_code">编&#12288;&#12288;&#12288;码：</string>
+    <string name="pers_name">姓&#12288;&#12288;&#12288;名：</string>
+    <string name="pers_dept">部&#12288;&#12288;&#12288;门：</string>
+    <string name="bingjia">病&#12288;&#12288;假：</string>
+    <string name="chiddao">迟&#12288;&#12288;到：</string>
+    <string name="jiaban">加&#12288;&#12288;班：</string>
+    <string name="shijia">事&#12288;&#12288;假：</string>
+    <string name="qingjia">请&#12288;&#12288;假：</string>
+    <string name="kuanggong">旷&#12288;&#12288;工：</string>
+    <string name="zaotui">早&#12288;&#12288;退：</string>
+    <string name="The_amount_of">金&#12288;&#12288;额：</string>
+    <string name="initiate">发&#160;&#160;起&#160;&#160;人：</string>
+    <string name="fujian">附&#160;&#160;件&#160;&#160;数：</string>
+    <string name="recipient">收&#160;&#160;件&#160;&#160;人：</string>
+    <string name="pcj">陪&#160;&#160;产&#160;&#160;假：</string>
+    <string name="brj">哺&#160;&#160;乳&#160;&#160;假：</string>
+    <string name="cgj">出&#160;&#160;公&#160;&#160;假：</string>
+    <string name="tqj">探&#160;&#160;亲&#160;&#160;假：</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

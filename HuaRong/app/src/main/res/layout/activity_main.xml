@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_click"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/toolbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_25"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+          />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.example.liqian.huarong.views.NoScrollViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab"
+        android:layout_below="@id/toolbar"></com.example.liqian.huarong.views.NoScrollViewPager>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/tab"
+        android:background="@color/c_cecece"></View>
+    <!--app:tabTextColor="@color/c_00b7ee"-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:tabIndicatorHeight="@dimen/dp_0"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/c_608ce0"></android.support.design.widget.TabLayout>
+</RelativeLayout>

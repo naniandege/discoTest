@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_2"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮件标题："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/base_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮件标题：" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_below="@id/linear"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送时间："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/make_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_below="@id/linear1"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发件人："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/make_pname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:layout_below="@id/linear2"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附件数："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/file_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/collection"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/linear3"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/box"
+                    android:layout_width="@dimen/dp_22"
+                    android:layout_height="@dimen/dp_22"
+                    android:background="@drawable/chebox_selector1"
+                    android:button="@null" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/query_information"
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@id/collection"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/daiban_shape"
+                android:text="邮件详情"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

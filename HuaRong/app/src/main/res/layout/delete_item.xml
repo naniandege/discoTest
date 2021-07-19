@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diglog_shape">
+
+    <LinearLayout
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:text="删除后，将清除此条数据"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="@color/c_cecece"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"></View>
+
+
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"></View>
+
+            <Button
+                android:id="@+id/determine"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="确定"
+                android:textColor="@color/c_000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

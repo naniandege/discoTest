@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_000000"
+    tools:context=".fragment.ShowImgFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.bm.library.PhotoView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside" />
+
+
+<!--    <ImageView
+        android:id="@+id/rotate_Img"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@drawable/rotate_img" />-->
+</RelativeLayout>

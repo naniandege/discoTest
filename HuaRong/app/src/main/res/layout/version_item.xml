@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--对话框标题区域-->
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="@dimen/dp_270"
+        android:layout_height="@dimen/dp_380"
+        android:layout_centerInParent="true"
+        android:background="@drawable/version">
+
+        <ImageView
+            android:id="@+id/cancle"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_20"
+            android:src="@drawable/down" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/determine"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/xiaban_shape"
+                android:text="立即更新"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/determine1"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/shangban_shape"
+                android:text="浏览器更新"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

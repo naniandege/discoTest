@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diglog_shape"
+    android:padding="@dimen/dp_5">
+
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:text="图片合集" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

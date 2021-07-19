@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/defaultimg"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:adjustViewBounds="true"
+        android:background="@color/grey"
+        android:contentDescription="TODO"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</RelativeLayout>

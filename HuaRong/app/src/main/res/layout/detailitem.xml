@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diglog_shape">
+
+    <!--对话框标题区域-->
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始日期："
+                android:textColor="#000000" />/>
+
+
+            <TextView
+                android:id="@+id/oal_date_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/c_f4f3f3"></View>
+
+        <LinearLayout
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束日期："
+                android:textColor="#000000" />/>
+
+
+            <TextView
+                android:id="@+id/oal_date_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/c_f4f3f3"></View>
+
+
+        <LinearLayout
+            android:id="@+id/invoDate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请项目："
+                android:textColor="#000000" />/>
+
+
+            <EditText
+                android:id="@+id/oal_nvar100_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/c_f4f3f3"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请加分："
+                android:textColor="#000000" />/>
+
+            <EditText
+                android:id="@+id/oal_deci2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/c_f4f3f3"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摘         要："
+                android:textColor="#000000" />/>
+
+
+            <EditText
+                android:id="@+id/oal_nvarmax_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/c_f4f3f3"></View>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_title"
+        android:background="@color/c_f4f3f3" />
+
+    <!--对话框按钮-->
+    <LinearLayout
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@id/view"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--取消按钮-->
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/text_cancel"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey" />
+
+        <!--退出按钮-->
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/c_000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

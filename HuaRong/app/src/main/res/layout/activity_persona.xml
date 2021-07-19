@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="@dimen/dp_5"
+    tools:context=".activity.PersonaActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="选择参与人"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/sp_18" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人员查询：" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:hint="输入姓名"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/to_view"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_35"
+            android:background="@drawable/daiban_shape"
+            android:gravity="center"
+            android:text="查   询"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/show"
+        android:layout_below="@id/lin"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"></View>
+
+    <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+    <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear"
+        android:layout_below="@id/show"
+        android:layout_marginTop="@dimen/dp_10"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.scwang.smartrefresh.header.MaterialHeader>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.footer.ClassicsFooter>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:gravity="center">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginRight="@dimen/dp_20"
+            android:id="@+id/but_refresh"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_45"
+            android:background="@drawable/daiban_shape"
+            android:text="刷新选择状态"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/but_ok"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_45"
+            android:background="@drawable/daiban_shape"
+            android:text="确         定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+</RelativeLayout>
